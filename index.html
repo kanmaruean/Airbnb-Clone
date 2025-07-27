@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <title>Airbnb Clone</title>
+  <body>
+    <section class="bg-[url('./images/Background-Image.webp')] bg-cover h-198 w-full bg-no-repeat bg-center" id="bg-cover">
+      <section class="bg-black py-4.5" id="welcome">
+        <p class="text-center text-gray-100 underline text-base font-roboto hover:cursor-pointer">
+                Welcome to Airbnb. Find the best places to stay in the world.
+        </p>
+      </section>
+      <div class="flex flex-row items-center justify-between h-20 px-20" id="top-section">
+        <div class="flex flex-row justify-start hover:cursor-pointer w-150" id="left-section">
+          <div id="logo">
+            <svg width="30" height="32" fill="#FFFFFF">
+              <path
+                d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z"
+              ></path>
+            </svg>
+          </div>
+          <div id="logo-font">
+            <span class="text-2xl font-bold text-white font-roboto ml-1">airbnb</span>
+          </div>
+        </div>
+        <div class="flex flex-row justify-center items-center w-150" id="middle-section">
+            <span class="text-white font-semibold text-lg font-roboto p-2.5 hover:border-b-1 hover:cursor-pointer">Home</span>
+            <span class="text-white font-semibold text-lg font-roboto p-2.5 hover:border-b-1 hover:cursor-pointer">Locations</span>
+            <span class="text-white font-semibold text-lg font-roboto p-2.5 hover:border-b-1 hover:cursor-pointer">About Us</span>
+        </div>
+        <div class="flex flex-row justify-end w-150" id="right-section">
+            <div class="flex flex-row" id="utility">
+                <span class="text-white font-normal text-base font-roboto py-2 px-3 rounded-full hover:bg-gray-50/25 hover:cursor-pointer">Become a Host</span>
+                <div class="p-2.5 rounded-full content-center hover:bg-gray-50/25 hover:cursor-pointer" id="world-icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                    style=" height: 16px; width: 16px; fill: white; position: relative;">
+                        <path
+                        d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                        </path>
+                    </svg>
+                </div>
+                <button class="flex flex-row items-center ml-4 p-1.5 bg-white rounded-full" id="ham-profile-button">
+                    <div class="px-1.5 hover:cursor-pointer" id="hamburger-icon">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                        style=" fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; position: relative;">
+                            <g fill="none" fill-rule="nonzero">
+                            <path d="m2 16h28"></path>
+                            <path d="m2 24h28"></path>
+                            <path d="m2 8h28"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="px-1.5 hover:cursor-pointer" id="profile-icon">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                        style="height: 29px; width: 29px; fill: currentcolor; position: relative;">
+                            <g fill="gray" fill-rule="nonzero">
+                                <path
+                                    d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center items-center content-center w-200 h-13 bg-white mx-auto rounded-full px-8 py-8.5" id="booking-bar">
+        <div class="flex flex-col py-1 pl-5 pr-10 hover:bg-gray-500/20 hover:rounded-full hover:py-1.5" id="location">
+            <span class="font-roboto font-medium hover:cursor-pointer">Location</span>
+            <input class="font-roboto text-sm pr-5 text-gray-900 hover:border-gray-600 hover:border-1" type="text" id="location" name="location" placeholder="Where are you going?">
+        </div>
+        <div class="flex flex-col px-5 border-l-1 border-gray-300 hover:bg-gray-500/20 hover:rounded-full hover:py-1.5" id="check-in">
+            <span class="font-roboto font-medium hover:cursor-pointer">Check-In</span>
+            <input class="font-roboto text-sm text-gray-500 hover:border-gray-600 hover:border-1" type="date" id="check-in-date" name="check-in-date" placeholder="Date">
+        </div>
+        <div class="flex flex-col px-5 border-l-1 border-gray-300 hover:bg-gray-500/20 hover:rounded-full hover:py-1.5" id="check-out">
+            <span class="font-roboto font-medium hover:cursor-pointer">Check-Out</span>
+            <input class="font-roboto text-sm text-gray-500 hover:border-gray-600 hover:border-1" type="date" id="check-out-date" name="check-out-date" placeholder="Date">
+        </div>
+        <div class="flex flex-col px-5 border-l-1 border-gray-300 hover:bg-gray-500/20 hover:rounded-full hover:py-1.5" id="guest">
+            <span class="font-roboto font-medium hover:cursor-pointer">Guests</span>
+            <input class="font-roboto text-sm w-27 text-gray-900 hover:border-gray-600 hover:border-1" type="number" id="guests-number" name="guests-number" placeholder="0">
+        </div>
+        <div class="flex items-center justify-center size-8 p-6 rounded-full ml-3 mr-2 bg-red-600 hover:bg-red-900 hover:cursor-pointer" id="search-button">
+            <div id="search-icon">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                style="height:16px; width:16px; stroke:#FFFFFF;stroke-width:4; overflow:visible;"
+                 aria-hidden="true" role="presentation" focusable="false">
+                    <g fill="none">
+                        <path
+                        d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-end h-105 px-20" id="preface">
+        <span class="text-6xl font-semibold text-white text-shadow-md">Plan Your Trip,<br>Nearby Places</span>
+        <button class="bg-white w-40 py-1.5 rounded-lg font-bold font-roboto mt-8 text-sm hover:cursor-pointer">Explore Locations</button>
+      </div>
+    </section>
+    <section class="bg-white bg-cover h-70" id="province-section">
+        <div class="h-25 grid grid-cols-6 gap-5 mt-15" id="province-top">
+            <div class="col-start-2 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Locations-1.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Khao Yai<br><span class="font-normal">30 Minutes by Car</span></span>
+            </div>
+            <div class="col-start-3 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Locations-3.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Chiangrai<br><span class="font-normal">1 hour by Car</span></span>
+            </div>
+            <div class="col-start-4 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Location 5.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Samui<br><span class="font-normal">3.5 hours by Car</span></span>
+            </div>
+            <div class="col-start-5 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Location-7.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Samet<br><span class="font-normal">30 Minutes by Car</span></span>
+            </div>
+        </div>
+        <div class="h-25 grid grid-cols-6 gap-5 mt-5" id="province-btm">
+            <div class="col-start-2 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Locations-2.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Pathum Thani<br><span class="font-normal">2 Hours by Car</span></span>
+            </div>
+            <div class="col-start-3 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Locations-4.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Pattaya<br><span class="font-normal">45 Minutes by Car</span></span>
+            </div>
+            <div class="col-start-4 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Location-6.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Rayong<br><span class="font-normal">45 Minutes by Car</span></span>
+            </div>
+            <div class="col-start-5 flex flex-row justify-start content-center items-center">
+                <img class="size-18 rounded-2xl hover:cursor-pointer" src="images/Location-8.png">
+                <span class="font-bold font-roboto ml-5 hover:cursor-pointer">Chiangmai<br><span class="font-normal">1 Hour by Car</span></span>
+            </div>
+        </div>
+    </section>
+    <section class="px-20 bg-white" id="accomodations-section">
+        <div class="h-110" id="accomodations-bg">
+            <span class="text-3xl font-roboto font-bold">Accomodations</span>
+            <div class="grid grid-cols-4 pt-3" id="cards">
+                <div>
+                    <img class="size-80 rounded-xl" src="images/Accomodations - 1.png">
+                    <span class="font-roboto font-bold mt-5 text-lg">Houses</span>
+                </div>
+                <div class="ml-4">
+                    <img class="size-80 rounded-xl" src="images/Accomodations-2.png">
+                    <span class="font-roboto font-bold mt-5 text-lg">Unique Spaces</span>
+                </div>
+                <div class="ml-4">
+                    <img class="size-80 rounded-xl" src="images/Accomodations-3.png">
+                    <span class="font-roboto font-bold mt-5 text-lg">Log Cabins & Country Houses</span>
+                </div>
+                <div class="ml-4">
+                    <img class="size-80 rounded-xl" src="images/Accomodations-4.png">
+                    <span class="font-roboto font-bold mt-5 text-lg">Hot Tubs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-160 bg-black px-20 pt-10" id="experiences-section">
+        <div>
+            <span class="text-white text-3xl font-bold pl-3">Unique Experiences and Activities</span><br>
+            <span class="text-white font-roboto pl-3">Meet the local experts.</span>
+        </div>
+        <div class="grid grid-cols-3" id="ex-photo-section">
+            <div class="pt-3 pl-3" id="ex-1">
+                <img class="size-110 box-content rounded-lg hover:cursor-pointer" src="images/Virtual Experience.png">
+                <span class="text-white text-lg font-roboto font-bold hover:cursor-pointer">Virtual Experience</span><br>
+                <span class="font-roboto text-white text-base hover:cursor-pointer">Travel the World from home</span>
+            </div>
+            <div class="pt-3 pl-3 content-center" id="ex-2">
+                <img class="size-110 rounded-lg hover:cursor-pointer" src="images/Experience.png">
+                <span class="text-white text-lg font-roboto font-bold hover:cursor-pointer">Experience</span><br>
+                <span class="font-roboto text-white text-base hover:cursor-pointer">Experience from Anywhere!</span>
+            </div>
+            <div class="pt-3 content-center pl-3" id="ex-3">
+                <img class="size-110 rounded-lg hover:cursor-pointer" src="images/Adventure.png">
+                <span class="text-white text-lg font-roboto font-bold hover:cursor-pointer">Adventure</span><br>
+                <span class="font-roboto text-white text-base hover:cursor-pointer">Multi-day trip with accomodation and meals.</span>     
+            </div>
+        </div>
+    </section>
+    <section class="h-118 w-full bg-white border-b-1 border-gray-300 px-20 pt-12"id="be-a-part-section">
+        <span class="text-3xl font-roboto font-bold pl-3">Be a part of the millions of Airbnb Host Community.</span>
+        <div class="grid grid-cols-3" id="be-photo-section">
+            <div class="col-start-1 pl-3" id="be-ex-1">
+                <img class="rounded-lg h-75 w-110 mt-3 hover:cursor-pointer" src="images/ Become a Hostel Host .png">
+                <span class="font-roboto font-bold text-base hover:cursor-pointer">Become a Hostel Host</span>
+            </div>
+            <div class="col-start-2 content-center pl-3" id="be-ex-1">
+                <img class="rounded-lg h-75 w-110 mt-3 hover:cursor-pointer" src="images/Host a Virtual Experience.png">
+                <span class="font-roboto font-bold text-base hover:cursor-pointer">Host a Virtual Experience</span>
+            </div>
+            <div class="col-start-3 content-center pl-3" id="be-ex-1">
+                <img class="rounded-lg h-75 w-110 mt-3 hover:cursor-pointer" src="images/Host Your Experience.png">
+                <span class="font-roboto font-bold text-base hover:cursor-pointer">Become a Hostel Host</span>
+            </div>
+        </div>
+    </section>
+    <section class="h-82.5 w-full bg-gray-100 px-20" id="link-section">
+        <div class="grid grid-cols-4 grid-rows-10 h-75" id="link-grid">
+                <span class="grid font-roboto font-bold text-sm col-start-1 row-start-2">Introduce</span>
+                <span class="grid col-start-1 row-start-3 text-sm font-roboto hover:underline hover:cursor-pointer">Guide to Use Airbnb</span>
+                <span class="grid col-start-1 row-start-4 text-sm font-roboto hover:underline hover:cursor-pointer">Newsroom</span>
+                <span class="grid col-start-1 row-start-5 text-sm font-roboto hover:underline hover:cursor-pointer">Investor Information</span>
+                <span class="grid col-start-1 row-start-6 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb Plus</span>
+                <span class="grid col-start-1 row-start-7 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb Luxe</span>
+                <span class="grid col-start-1 row-start-8 text-sm font-roboto hover:underline hover:cursor-pointer">Hotel Tonight</span>
+                <span class="grid col-start-1 row-start-9 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb Business Program</span>
+                <span class="grid col-start-1 row-start-10 text-sm font-roboto hover:underline hover:cursor-pointer">Olympic</span>
+                <span class="grid col-start-1 row-start-11 text-sm font-roboto hover:underline hover:cursor-pointer">Jobs</span>
+                <span class="grid font-roboto font-bold text-sm col-start-2 row-start-2">Community</span>
+                <span class="grid col-start-2 row-start-3 text-sm font-roboto hover:underline hover:cursor-pointer">Diversity</span>
+                <span class="grid col-start-2 row-start-4 text-sm font-roboto hover:underline hover:cursor-pointer">Accessibility</span>
+                <span class="grid col-start-2 row-start-5 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb Associate</span>
+                <span class="grid col-start-2 row-start-6 text-sm font-roboto hover:underline hover:cursor-pointer">Accomodation for Aid Workers</span>
+                <span class="grid col-start-2 row-start-7 text-sm font-roboto hover:underline hover:cursor-pointer">Invite Friends</span>
+                <span class="grid col-start-2 row-start-8 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb.org</span>
+                <span class="grid font-roboto font-bold text-sm col-start-3 row-start-2">To Host</span>
+                <span class="grid col-start-3 row-start-3 text-sm font-roboto hover:underline hover:cursor-pointer">Accomodation Hosting</span>
+                <span class="grid col-start-3 row-start-4 text-sm font-roboto hover:underline hover:cursor-pointer">Host a Virtual Experience</span>
+                <span class="grid col-start-3 row-start-5 text-sm font-roboto hover:underline hover:cursor-pointer">Host Your Experience</span>
+                <span class="grid col-start-3 row-start-6 text-sm font-roboto hover:underline hover:cursor-pointer">Responsible Hosting</span>
+                <span class="grid col-start-3 row-start-7 text-sm font-roboto hover:underline hover:cursor-pointer">Data Center</span>
+                <span class="grid col-start-3 row-start-8 text-sm font-roboto hover:underline hover:cursor-pointer">Community Center</span>
+                <span class="grid font-roboto font-bold text-sm col-start-4 row-start-2">Airbnb Support</span>
+                <span class="grid col-start-4 row-start-3 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb's response to COVID-19</span>
+                <span class="grid col-start-4 row-start-4 text-sm font-roboto hover:underline hover:cursor-pointer">Help Center</span>
+                <span class="grid col-start-4 row-start-5 text-sm font-roboto hover:underline hover:cursor-pointer">Reservation Cancellation</span>
+                <span class="grid col-start-4 row-start-6 text-sm font-roboto hover:underline hover:cursor-pointer">Airbnb Neighbor Complaint Support</span>
+                <span class="grid col-start-4 row-start-7 text-sm font-roboto hover:underline hover:cursor-pointer">Trust and Safety</span>
+            </div>
+        </div>
+    </section>
+    <footer class="px-20 border-gray-300 border-t-1 pt-2.5 pb-4 flex flex-row justify-between">
+        <div>
+            <span class="font-roboto text-sm">© 2021 Airbnb, Inc. All rights reserved</span>
+            <div>
+                <span class="font-roboto text-sm"><span class="hover:underline hover:cursor-pointer">Privacy Policy</span> · <span class="hover:underline hover:cursor-pointer">Terms of Service</span> · <span class="hover:underline hover:cursor-pointer">Map</span> · <span class="hover:underline hover:cursor-pointer">Refund Policy</span> · <span class="hover:underline hover:cursor-pointer">Company Details</span></span>
+            </div>
+        </div>
+        <div class="flex flex-row items-center content-center">
+            <div class="hover:cursor-pointer">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                    style=" height: 16px; width: 16px; fill: black;">
+                        <path
+                        d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                        </path>
+                    </svg>
+            </div>
+            <span class="underline font-roboto text-sm font-bold hover:cursor-pointer pr-5 pl-1">English (EN)</span>
+            <span class="underline font-roboto text-sm font-bold hover:cursor-pointer pr-5 pl-1">฿ THB</span>
+        </div>
+        <div class="flex flex-row items-center" id="social-network">
+            <img class="size-4 hover:cursor-pointer" src="images/FB.png">
+            <img class="size-4 hover:cursor-pointer mx-4" src="images/twitter.png">
+            <img class="size-4 hover:cursor-pointer" src="images/images.png">
+        </div>
+    </footer>
+  </body>
+</html>
